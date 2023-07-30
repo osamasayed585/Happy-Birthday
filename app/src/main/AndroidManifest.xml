@@ -12,6 +12,28 @@
         android:theme="@style/Theme.HappyBirthday"
         tools:targetApi="31">
         <activity
+            android:name=".ComposeQuadrantActivity"
+            android:exported="true"
+            android:label="@string/title_activity_compose_quadrant"
+            android:theme="@style/Theme.HappyBirthday">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DayTasksActivity"
+            android:exported="true"
+            android:label="@string/title_activity_day_tasks"
+            android:theme="@style/Theme.HappyBirthday">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ArticleActivity"
             android:exported="true"
             android:label="@string/title_activity_article"
@@ -26,7 +48,6 @@
             android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.HappyBirthday" />
-
     </application>
 
 </manifest>
